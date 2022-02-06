@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.home.HomeFragment">
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+
+        android:layout_marginEnd="2dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderIndicatorEnabled="true"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorOrientation="horizontal"
+        android:layout_marginRight="2dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderScrollTimeInSec="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/hori_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.example.e_commersapp.Hori_fragment"
+        tools:layout="@layout/fragment_hori_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slider" />
+
+    <fragment
+        android:id="@+id/veri_pct_fragment"
+        class="com.example.e_commersapp.Veri_Pct_Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+
+        android:layout_marginRight="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hori_fragment"
+        tools:layout="@layout/fragment_veri__pct_" />
+
+    <fragment
+        android:id="@+id/women_saree_fragment"
+        class="com.example.e_commersapp.WomenSareeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/veri_pct_fragment"
+        tools:layout="@layout/fragment_women_saree" />
+    <fragment
+        android:id="@+id/boys_watch_fragment"
+        class="com.example.e_commersapp.BoysWatchFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/women_saree_fragment"
+        tools:layout="@layout/fragment_boys_watch" />
+
+    <fragment
+        android:id="@+id/girls_watch_fragment"
+        class="com.example.e_commersapp.Girls_watch_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boys_watch_fragment"
+        tools:layout="@layout/fragment_girls_watch_fragment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

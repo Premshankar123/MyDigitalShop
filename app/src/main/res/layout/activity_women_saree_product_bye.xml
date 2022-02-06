@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffff"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".WomenSareeProductBye">
+
+    <ImageView
+        android:id="@+id/img_bye"
+        android:layout_width="match_parent"
+        android:layout_height="500dp" />
+    <LinearLayout
+        android:id="@+id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/img_bye">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="#000">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Size: "/>
+
+
+            <Spinner
+                android:id="@+id/size_spinner"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="5dp"
+            android:background="#000">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Qty: "/>
+
+
+            <Spinner
+                android:id="@+id/qty_spinner"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/bye_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/name_layout"
+        android:importantForAccessibility="yes"
+        android:text="product name"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+    <TextView
+        android:id="@+id/about_pct"
+        android:layout_width="wrap_content"
+        android:importantForAccessibility="yes"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/bye_name"
+        android:text="About Product "/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/about_pct"
+        android:id="@+id/price_off"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="yes"
+            android:layout_below="@id/about_pct"
+            android:text="price"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/product_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="yes"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#3F9F43"
+            android:text="off"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/free_delivery"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/price_off"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:text="Free dilevery on orders over ₹399"/>
+
+    <TextView
+        android:id="@+id/delivery_days"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/free_delivery"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:text="Delivery in 4-5 days"/>
+    <TextView
+        android:id="@+id/return_policy"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/delivery_days"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:text="8 Days return policy"/>
+    <TextView
+        android:id="@+id/cash_delivery"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/return_policy"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:text="Cash on Delivery Available"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/cash_delivery"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/add_card_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Add card"
+            android:textColor="#000"
+            android:background="#ffffff"/>
+        <Button
+            android:id="@+id/bye_pct_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="bye now"
+            android:textColor="#000000"
+            android:background="#F13A1A"/>
+    </LinearLayout>
+
+</RelativeLayout>

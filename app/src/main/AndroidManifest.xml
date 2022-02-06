@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.e_commersapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Navigation_Header" />
+        <activity android:name=".WomenSareeProductBye" />
+        <activity android:name=".BoysWatchActivity" />
+        <activity android:name=".GirlsWatchActivity" />
+        <activity android:name=".MenTshirtActivity" />
+        <activity android:name=".WomenSareeActivity" />
+        <activity
+            android:name=".PaymentMode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeliveryAddress"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DropdownListOfCard" />
+        <activity android:name=".AddCardActivity" />
+        <activity android:name=".Product_Buy" />
+        <activity android:name=".MainActivity2" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Login" />
+        <activity android:name=".SignUp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
